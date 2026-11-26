@@ -22,8 +22,8 @@ _Name of your function, what it returns, and which array methods it uses._
 
 ## What I learned today
 
-_Write 2–3 sentences in your own words: when would you use map, filter, find and reduce?_
+I learn about common mistake and how to fix it in correct way.And I learn that it very hard for me to understand and do it with out hint or asking for help.
 
 ## AI-use statement
 
-_Did you use an AI tool in this lab? If yes, which one and for what. If no, write "No AI tools used."_
+No AI tools used. Just ask my friends.
