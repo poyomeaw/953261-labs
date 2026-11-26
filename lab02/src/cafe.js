@@ -34,6 +34,7 @@ export function availableIn(menu, category) {
   // TODO
   return menu
     .filter((i) => i.available)
+    .filter((i) => i.category === category)
     .map((i) => i.name);
 }
 
@@ -44,6 +45,8 @@ export function availableIn(menu, category) {
 // Hint: start with  const { name, price, available } = item;
 export function menuLine(item) {
   // TODO
+  const { name, price, available } = item;
+  return available ? `${name} — ${price} THB`: `${name} — ${price} THB (sold out)`;
 }
 
 // Task 6 — spread
