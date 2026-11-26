@@ -9,12 +9,14 @@
 // menuNames(menu) → ["Thai Iced Tea", "Americano", ...]
 export function menuNames(menu) {
   // TODO
+  return menu.map((item) => item.name);
 }
 
 // Task 2 — filter
 // Return only the items whose `available` is true.
 export function availableItems(menu) {
   // TODO
+  return menu.filter((i) => i.available);
 }
 
 // Task 3 — find
@@ -22,6 +24,7 @@ export function availableItems(menu) {
 // findItem(menu, "F01") → { id: "F01", name: "Khao Soi", ... }
 export function findItem(menu, id) {
   // TODO
+  return menu.find((i) => i.id === id);
 }
 
 // Task 4 — filter + map
@@ -29,6 +32,9 @@ export function findItem(menu, id) {
 // availableIn(menu, "dessert") → ["Mango Sticky Rice", "Coconut Ice Cream"]
 export function availableIn(menu, category) {
   // TODO
+  return menu
+    .filter((i) => i.available)
+    .map((i) => i.name);
 }
 
 // Task 5 — template literal + destructuring
